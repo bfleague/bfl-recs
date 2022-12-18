@@ -55,7 +55,7 @@ export class RecordingsBot {
                     if (playersBlue.length > 1024) playersBlue = playersBlue.slice(0, 1000) + "\n...";
 
                     const infoURL = Buffer.from(Pako.gzip(dataString)).toString('base64');
-                    const matchURL = `https://www.bfleague.online/#/match/${encodeURIComponent(infoURL)}`;
+                    const matchURL = `https://www.bfleague.com.br/#/match/${encodeURIComponent(infoURL)}`;
 
                     console.log(matchURL + "\n" +   + "\n\n");
 
